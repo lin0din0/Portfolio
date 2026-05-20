@@ -1,0 +1,35 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_Preview__preview_start",
+      "Bash(cp /Users/mac/Downloads/LinNora_ConnectDots.html /Users/mac/Desktop/design_handoff_portfolio/connect-dots-portrait.html)",
+      "Bash(python3 -c ' *)",
+      "Read(//Users/mac/Desktop/**)",
+      "Bash(cp \"/Users/mac/Desktop/Skjermopptak 2026-05-19 kl. 00.22.21.mov\" \"/Users/mac/Desktop/design_handoff_portfolio/entur-hero.mov\" && echo \"copied\")",
+      "Bash(xargs ls -lt)",
+      "Bash(sips -g pixelWidth -g pixelHeight \"/Users/mac/Downloads/4A3848B3-7E6E-4B99-AE9F-6224CC53208B.jpg\")",
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/mac/Desktop/design_handoff_portfolio/portrait_revealphoto.png)",
+      "Bash(sed -i '' 's|portfolio-core.jsx?v=5|portfolio-core.jsx?v=6|g' /Users/mac/Desktop/design_handoff_portfolio/index.html /Users/mac/Desktop/design_handoff_portfolio/carbon-dex.html /Users/mac/Desktop/design_handoff_portfolio/armenia.html /Users/mac/Desktop/design_handoff_portfolio/homecoming.html /Users/mac/Desktop/design_handoff_portfolio/eva.html /Users/mac/Desktop/design_handoff_portfolio/teddy.html /Users/mac/Desktop/design_handoff_portfolio/worth-it.html /Users/mac/Desktop/design_handoff_portfolio/project.html /Users/mac/Desktop/design_handoff_portfolio/local.html /Users/mac/Desktop/design_handoff_portfolio/togather.html /Users/mac/Desktop/design_handoff_portfolio/toyen-takt.html /Users/mac/Desktop/design_handoff_portfolio/volunteering.html /Users/mac/Desktop/design_handoff_portfolio/about.html /Users/mac/Desktop/design_handoff_portfolio/Portfolio.html)",
+      "Bash(sed -i '' 's|portfolio-sections.jsx?v=5|portfolio-sections.jsx?v=6|g' /Users/mac/Desktop/design_handoff_portfolio/index.html)",
+      "Bash(sed -i '' 's/portfolio-core\\\\.jsx?v=6/portfolio-core.jsx?v=7/g' /Users/mac/Desktop/design_handoff_portfolio/*.html)",
+      "Bash(sed -i '' 's/portfolio-core\\\\.jsx?v=8/portfolio-core.jsx?v=9/g' /Users/mac/Desktop/design_handoff_portfolio/*.html)",
+      "Bash(sed -i '' 's/portfolio-sections\\\\.jsx?v=7/portfolio-sections.jsx?v=8/g' /Users/mac/Desktop/design_handoff_portfolio/*.html)",
+      "Bash(sed -i '' 's/portfolio-core\\\\.jsx?v=9/portfolio-core.jsx?v=10/g' /Users/mac/Desktop/design_handoff_portfolio/*.html)",
+      "Bash(sed -i '' 's/portfolio-project-volunteering\\\\.jsx?v=2/portfolio-project-volunteering.jsx?v=3/g' /Users/mac/Desktop/design_handoff_portfolio/*.html)",
+      "Bash(sed -i '' 's/portfolio-core\\\\.jsx?v=12/portfolio-core.jsx?v=13/g' *.html && grep -l \"portfolio-core\" *.html | xargs grep -o \"portfolio-core\\\\.jsx?v=[0-9]*\" | head -10)",
+      "Bash(git --version)",
+      "Bash(git config *)",
+      "Bash(git init *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git branch *)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "Bash(echo \"EXIT: $?\")",
+      "Bash(git rm *)",
+      "Bash(echo \"Local photos/Deliver2.mov\")",
+      "Bash(rm -rf .git)",
+      "Bash(echo 'Local photos/Deliver2.mov')"
+    ]
+  }
+}
