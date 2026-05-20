@@ -1,6 +1,6 @@
 // portfolio-project-toyen.jsx, Tøyen Takt project page
 
-const BASE = "T%C3%B8yen%20takt%20photos/";
+const BASE = "T%C3%B8yen%20Takt%20photos/";
 
 function ProjectDetailToyen() {
   const H_SECTION = {

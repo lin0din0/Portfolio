@@ -14,7 +14,7 @@ const SECTIONS = [
       { num: "01", title: "Volunteering, my way", line: "Redefining how young people connect with volunteering.", collab: "Red Cross", year: "2024", tag: "UX research", href: "volunteering.html", cardVideo: "Voulenteering%20my%20way%20photos/My%20way%20project%20card%20video.mov" },
       { num: "02", title: "More Than a Trip", line: "Exploring how to motivate eco-conscious travel through personal incentives.", collab: "Entur", year: "2024", tag: "Service design", href: "project.html", cardVideo: "Entur%20project%20page%20photos/Entur%20project%20card%20video.mov" },
       { num: "03", title: "EVA — Emotional Vehicle Assistant", line: "Designing AI for human-centered mobility.", collab: "HUF", year: "2025", tag: "AI / HMI", href: "eva.html", cardVideo: "EVA%20photos/Project%20card%20video.mov", cardLogo: "EVA%20photos/huf_logo_card.svg" },
-      { num: "04", title: "Tøyen Takt", line: "Turning a building without an identity into a neighbourhood's reason to come back.", collab: "AHO", year: "2023", tag: "Service Design", href: "toyen-takt.html", cardVideo: "T%C3%B8yen%20takt%20photos/T%C3%B8yen%20takt%20project%20card%20video.mov" },
+      { num: "04", title: "Tøyen Takt", line: "Turning a building without an identity into a neighbourhood's reason to come back.", collab: "AHO", year: "2023", tag: "Service Design", href: "toyen-takt.html", cardVideo: "T%C3%B8yen%20Takt%20photos/T%C3%B8yen%20takt%20project%20card%20video.mov" },
       { num: "05", title: "Worth it?", line: "Data as a design material for digital services.", collab: "Æra", year: "2023", tag: "Speculative", href: "worth-it.html", cardVideo: "Worth%20it%20photos/Worth%20it%20project%20card%20video.mov" },
     ],
   },
