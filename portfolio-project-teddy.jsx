@@ -95,7 +95,7 @@ function ProjectDetailTeddy() {
           aspectRatio: "16 / 9"
         }}>
           <iframe
-            src="https://embed.figma.com/proto/ZgoTc69K15AAsvH1XDAYRW/Teddy?node-id=280-38&viewport=241%2C7%2C0.11&scaling=contain&content-scaling=fixed&starting-point-node-id=280%3A38&page-id=0%3A1&embed-host=share"
+            src="https://embed.figma.com/proto/ZgoTc69K15AAsvH1XDAYRW/Teddy?node-id=134-700&page-id=0%3A1&starting-point-node-id=134%3A700&scaling=contain&content-scaling=fixed&embed-host=share"
             style={{ border: "none", width: "100%", height: "100%", display: "block" }}
             allowFullScreen
           />
