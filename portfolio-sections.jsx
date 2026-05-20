@@ -34,13 +34,14 @@ function Nav({ onHover }) {
 function Hero({ onHover }) {
   return (
     <section id="top" style={{
-      height: "100%", padding: "140px 64px 60px",
+      height: "100%", padding: "100px 64px 60px",
       position: "relative", boxSizing: "border-box",
-      display: "flex", flexDirection: "column"
+      display: "flex", flexDirection: "column",
+      justifyContent: "center"
     }}>
       <div style={{
-        display: "grid", gridTemplateColumns: "1fr 440px",
-        gap: 80, alignItems: "center"
+        display: "grid", gridTemplateColumns: "1fr 1fr",
+        gap: 60, alignItems: "center"
       }}>
         {/* LEFT  text block */}
         <div>
@@ -71,14 +72,14 @@ function Hero({ onHover }) {
           </p>
 
           <h1 style={{
-            margin: "80px 0 0",
+            margin: "60px 0 0",
             fontFamily: "'Hanken Grotesk', sans-serif",
             fontWeight: 300,
-            fontSize: 30,
-            lineHeight: 1.25,
-            letterSpacing: "-0.015em",
+            fontSize: 42,
+            lineHeight: 1.15,
+            letterSpacing: "-0.025em",
             color: "var(--ink)",
-            maxWidth: 460
+            maxWidth: 520
           }}>
             Connecting the dots<br />
             between people & design
