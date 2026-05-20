@@ -6,10 +6,10 @@
 <title>Lin Nora — Connect the dots</title>
 <style>
 *{box-sizing:border-box;margin:0;padding:0;}
-body{font-family:system-ui,sans-serif;background:#FAFAF7;display:flex;flex-direction:column;align-items:center;padding:0.5rem 1rem 1rem;gap:8px;position:relative;}
+body{font-family:system-ui,sans-serif;background:#FAFAF7;display:flex;flex-direction:column;align-items:center;padding:0;gap:4px;position:relative;width:100%;}
 
 .hint{font-size:11px;letter-spacing:0.1em;text-transform:uppercase;color:#999;}
-.stage{position:relative;width:480px;max-width:92vw;aspect-ratio:1;}
+.stage{position:relative;width:100%;max-width:100%;aspect-ratio:1;}
 
 /* dots canvas — on top, fades out at 100% */
 #cv{
@@ -29,7 +29,7 @@ body{font-family:system-ui,sans-serif;background:#FAFAF7;display:flex;flex-direc
 }
 #portrait svg{position:absolute;inset:0;width:100%;height:100%;}
 
-.bar-row{display:flex;align-items:center;gap:10px;width:480px;max-width:92vw;}
+.bar-row{display:flex;align-items:center;gap:10px;width:100%;max-width:100%;}
 .bt{flex:1;height:1px;background:#e0e0e0;}
 @media(prefers-color-scheme:dark){.bt{background:#333;}}
 .bf{height:100%;width:0%;background:#111;transition:width 0.1s;}
@@ -41,7 +41,7 @@ body{font-family:system-ui,sans-serif;background:#FAFAF7;display:flex;flex-direc
 </head>
 <body>
 
-<p class="rm" id="rm">Nice to meet you.</p>
+<p class="rm" id="rm"></p>
 <div class="stage">
   <div id="portrait"><svg width="100%" height="100%" viewBox="0 0 393 393" preserveAspectRatio="xMidYMid meet" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <rect width="393" height="393" rx="196.5" fill="url(#pattern0_272_581)"/>

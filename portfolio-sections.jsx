@@ -1,8 +1,8 @@
-// portfolio-sections.jsx — Hero, Projects, About, Skills, Footer
+// portfolio-sections.jsx  Hero, Projects, About, Skills, Footer
 const { useState: useStateS, useEffect: useEffectS, useRef: useRefS } = React;
 
 // ────────────────────────────────────────────────────────────────────────────
-// NAV — minimal: About · Projects · Connect, top right
+// NAV  minimal: About · Projects · Connect, top right
 // ────────────────────────────────────────────────────────────────────────────
 function Nav({ onHover }) {
   const link = (href, label) =>
@@ -29,7 +29,7 @@ function Nav({ onHover }) {
 }
 
 // ────────────────────────────────────────────────────────────────────────────
-// HERO — small breathable text, portrait box top-right, Selected works pill below
+// HERO  small breathable text, portrait box top-right, Selected works pill below
 // ────────────────────────────────────────────────────────────────────────────
 function Hero({ onHover }) {
   return (
@@ -42,7 +42,7 @@ function Hero({ onHover }) {
         display: "grid", gridTemplateColumns: "1fr 440px",
         gap: 80, alignItems: "center"
       }}>
-        {/* LEFT — text block */}
+        {/* LEFT  text block */}
         <div>
           <p style={{
             margin: 0,
@@ -85,22 +85,23 @@ function Hero({ onHover }) {
           </h1>
         </div>
 
-        {/* RIGHT — connect-the-dots portrait, no box */}
-        <div style={{ width: "100%", position: "relative" }}>
+        {/* RIGHT  connect-the-dots portrait, no box */}
+        <div style={{ width: "100%", position: "relative", aspectRatio: "1 / 1" }}>
           <iframe
             src="connect-dots-portrait.html?v=4"
             style={{
-              width: "100%", height: 560,
+              position: "absolute", inset: 0,
+              width: "100%", height: "100%",
               border: "none", display: "block",
               background: "transparent"
             }}
             scrolling="no"
           />
-          {/* Who am i button — coming soon */}
+          {/* Who am i button  coming soon */}
         </div>
       </div>
 
-      {/* "Selected works ↓" pill — bottom left, well below the grid */}
+      {/* "Selected works ↓" pill  bottom left, well below the grid */}
       <div style={{ marginTop: 80 }}>
         <a href="#work"
         onMouseEnter={() => onHover && onHover("link")}
@@ -122,7 +123,7 @@ function Hero({ onHover }) {
 }
 
 // ────────────────────────────────────────────────────────────────────────────
-// PROJECTS — title + intro + centered pill tabs + 2-col clean placeholder grid
+// PROJECTS  title + intro + centered pill tabs + 2-col clean placeholder grid
 // ────────────────────────────────────────────────────────────────────────────
 function Projects({ onHover, activeOverride }) {
   const [active, setActive] = useStateS(activeOverride || "ux");
@@ -133,7 +134,7 @@ function Projects({ onHover, activeOverride }) {
 
   return (
     <section id="work" style={{ padding: "140px 64px 100px" }}>
-      {/* Header — left aligned */}
+      {/* Header  left aligned */}
       <div style={{ maxWidth: 720 }}>
         <h2 style={{
           margin: 0,
@@ -261,7 +262,7 @@ function ProjectCard({ p, onHover }) {
           pointerEvents: "none"
         }} />
 
-        {/* collab logo — bottom right, sits above media but below pill */}
+        {/* collab logo  bottom right, sits above media but below pill */}
         {p.cardLogo && (
           <img src={p.cardLogo} alt={p.collab} style={{
             position: "absolute", bottom: 16, right: 16,
@@ -319,7 +320,7 @@ function ProjectCard({ p, onHover }) {
 }
 
 // ────────────────────────────────────────────────────────────────────────────
-// ROADMAP NODE — expands on hover with extra description
+// ROADMAP NODE  expands on hover with extra description
 // ────────────────────────────────────────────────────────────────────────────
 function RoadmapNode({ s }) {
   const [hov, setHov] = useStateS(false);
@@ -337,7 +338,7 @@ function RoadmapNode({ s }) {
       cursor: expandable ? "pointer" : "default",
       transition: "flex .55s cubic-bezier(.2,.8,.2,1)"
     }}>
-      {/* Card background — overlays the line where expanded */}
+      {/* Card background  overlays the line where expanded */}
       <div style={{
         position: "absolute", inset: "-18px -22px",
         background: "var(--bg-soft)",
@@ -403,7 +404,7 @@ function RoadmapNode({ s }) {
 // ABOUT
 // ────────────────────────────────────────────────────────────────────────────
 function About({ onHover }) {
-  // tonal placeholder background — reused across slots
+  // tonal placeholder background  reused across slots
   const TONAL = {
     background: "var(--bg-soft)",
     border: "1px solid var(--line-soft)"
@@ -515,7 +516,7 @@ function About({ onHover }) {
                 display: "block", marginTop: 8,
                 fontFamily: "'Hanken Grotesk', sans-serif", fontStyle: "normal",
                 fontSize: 12, color: "var(--muted)"
-              }}>— John Heskett</span>
+              }}> John Heskett</span>
             </blockquote>
           </div>
 
@@ -540,9 +541,9 @@ function About({ onHover }) {
         <h2 style={SECTION_H}>My roadmap<span style={{ color: "var(--muted)" }}>.</span></h2>
 
         {/* horizontal timeline */}
-        {/* horizontal timeline — items expand on hover */}
+        {/* horizontal timeline  items expand on hover */}
         <div style={{ marginTop: 80, position: "relative", paddingTop: 24 }}>
-          {/* the line — sits behind cards */}
+          {/* the line  sits behind cards */}
           <div style={{
             position: "absolute", left: "4%", right: "4%", top: 32,
             height: 1, background: "var(--line-soft)", zIndex: 0
@@ -561,7 +562,7 @@ function About({ onHover }) {
               {
                 name: "Tongji University",
                 detail2:
-                  "Exchange semester at Tongji in Shanghai — design across cultures, materials, and ways of working. Add more context here."
+                  "Exchange semester at Tongji in Shanghai  design across cultures, materials, and ways of working. Add more context here."
               },
               {
                 name: "SAHO",
@@ -576,7 +577,7 @@ function About({ onHover }) {
               {
                 name: "Edvard Munch VGS",
                 detail2:
-                  "Where curiosity in design first took shape — visual arts, music, and a love for making. Edit me."
+                  "Where curiosity in design first took shape  visual arts, music, and a love for making. Edit me."
               }
             ].map((s, i) => <RoadmapNode key={i} s={s} />)}
           </div>
@@ -595,7 +596,7 @@ function About({ onHover }) {
             fontFamily: "'JetBrains Mono', monospace",
             fontSize: 11, letterSpacing: "0.08em", textTransform: "uppercase",
             color: "var(--muted)"
-          }}>2019 – Present</p>
+          }}>2019 Present</p>
           <p style={{
             margin: "18px 0 0",
             fontFamily: "'Hanken Grotesk', sans-serif",
@@ -603,10 +604,10 @@ function About({ onHover }) {
             color: "var(--ink-2)"
           }}>
             I've always been drawn to detail, collaboration, and creative expression.
-            Before design, that world was music — I played violin for most of my life.
+            Before design, that world was music  I played violin for most of my life.
             Over time, that same mindset naturally shifted into design: understanding rhythm,
             structure, emotion, and how people experience something together. What started as
-            curiosity in high school slowly became a clear direction — and since then, I've been
+            curiosity in high school slowly became a clear direction  and since then, I've been
             exploring how design can create meaningful value between humans, technology, and society.
           </p>
         </div>
@@ -626,7 +627,7 @@ function About({ onHover }) {
             fontSize: 13.5, lineHeight: 1.6, letterSpacing: "-0.005em",
             color: "var(--ink-2)"
           }}>
-            Open to roles where design touches strategy, AI, and the public good —
+            Open to roles where design touches strategy, AI, and the public good 
             and to side-projects that don't take themselves too seriously.
           </p>
         </div>
@@ -650,13 +651,15 @@ function About({ onHover }) {
 
         <div style={{
           marginTop: 56,
-          display: "grid", gridTemplateColumns: "repeat(1, 1fr)",
-          gap: 24, maxWidth: 320
+          display: "grid", gridTemplateColumns: "repeat(3, 1fr)",
+          gap: 24, maxWidth: 980
         }}>
           {[
-            { label: "Email", caption: "linnoratollefsen@gmail.com" },
+            { label: "Email", caption: "linnoratollefsen@gmail.com", href: "mailto:linnoratollefsen@gmail.com" },
+            { label: "LinkedIn", caption: "/in/linnoratollefsen", href: "https://www.linkedin.com/in/linnoratollefsen" },
+            { label: "GitHub", caption: "lin0din0", href: "https://github.com/lin0din0" },
           ].map((c, i) => (
-            <a key={i} href="#" onClick={(e) => e.preventDefault()}
+            <a key={i} href={c.href} target="_blank" rel="noopener noreferrer"
             style={{
               ...TONAL, display: "block", width: "100%", aspectRatio: "5 / 4",
               borderRadius: 18, position: "relative", overflow: "hidden",
@@ -701,7 +704,7 @@ function About({ onHover }) {
 }
 
 // ────────────────────────────────────────────────────────────────────────────
-// TOOLKIT — "My toolbox" + intro + one large interactive illustration slot
+// TOOLKIT  "My toolbox" + intro + one large interactive illustration slot
 // ────────────────────────────────────────────────────────────────────────────
 function Skills({ onHover }) {
   return (
@@ -758,20 +761,38 @@ function Skills({ onHover }) {
         </span>
       </div>
 
-      {/* Optional: a tiny chip strip listing categories — keeps content but doesn't compete */}
-      <div style={{
-        marginTop: 60,
-        display: "flex", flexWrap: "wrap", justifyContent: "center", gap: 10,
-        maxWidth: 800, marginLeft: "auto", marginRight: "auto"
-      }}>
-        {SKILLS.flatMap((g) => g.items).map((it) =>
-        <span key={it} style={{
-          padding: "8px 16px", borderRadius: 999,
-          border: "1px solid var(--line-soft)",
-          fontFamily: "'Hanken Grotesk', sans-serif",
-          fontSize: 12, color: "var(--ink-2)", letterSpacing: "-0.005em"
-        }}>{it}</span>
-        )}
+      {/* Skill groups */}
+      <div style={{ marginTop: 72, display: "flex", flexDirection: "column", gap: 40, maxWidth: 1000, marginLeft: "auto", marginRight: "auto" }}>
+        {SKILLS.map((g) => (
+          <div key={g.group} style={{ display: "grid", gridTemplateColumns: "100px 1fr", gap: 24, alignItems: "start" }}>
+            <div style={{ paddingTop: 6 }}>
+              <span style={{
+                fontFamily: "'Hanken Grotesk', sans-serif",
+                fontSize: g.group === "tools" ? 13 : 28,
+                fontWeight: 400,
+                letterSpacing: g.group === "tools" ? "-0.005em" : "-0.02em",
+                color: g.color,
+                display: "block", lineHeight: 1
+              }}>{g.group}</span>
+              <span style={{
+                fontFamily: "'Hanken Grotesk', sans-serif",
+                fontSize: 11, color: "var(--muted)", letterSpacing: "0.05em",
+                textTransform: "uppercase", display: "block", marginTop: 4
+              }}>{g.label}</span>
+            </div>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
+              {g.items.map((it) => (
+                <span key={it} style={{
+                  padding: "7px 14px", borderRadius: 999,
+                  border: "1px solid var(--line-soft)",
+                  fontFamily: "'Hanken Grotesk', sans-serif",
+                  fontSize: 12, color: "var(--ink-2)", letterSpacing: "-0.005em",
+                  background: "var(--bg)"
+                }}>{it}</span>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>);
 
@@ -800,14 +821,6 @@ function Footer({ onHover }) {
         }}>
           Connect<span style={{ color: "var(--muted)" }}>.</span>
         </h2>
-        <p style={{
-          margin: "14px 0 0",
-          fontFamily: "'Hanken Grotesk', sans-serif",
-          fontSize: 13, lineHeight: 1.45, letterSpacing: "-0.005em",
-          color: "var(--ink)"
-        }}>
-          Currently open to collaborations & 2026 projects.
-        </p>
       </div>
 
       <div style={{ marginTop: 80 }}>

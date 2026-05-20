@@ -45,7 +45,7 @@ function ProjectDetailTeddy() {
           <span style={{
             fontFamily: "'Hanken Grotesk', sans-serif",
             fontSize: 12, letterSpacing: "-0.005em", color: "var(--ink-2)"
-          }}>This page is under construction — browse the slides in the meantime ;)</span>
+          }}>This page is under construction. Browse the slides in the meantime ;)</span>
         </div>
 
         {/* ─── TITLE BLOCK ────────────────────────────────────────────── */}

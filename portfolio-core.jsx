@@ -32,10 +32,10 @@ const SECTIONS = [
 ];
 
 const SKILLS = [
-  { group: "Research", items: ["User interviews", "Co-design workshops", "Field studies", "Synthesis", "Service blueprints"] },
-  { group: "Design", items: ["Interaction design", "Prototyping", "Information architecture", "Visual systems", "Design systems"] },
-  { group: "Tools", items: ["Figma", "Framer", "Protopie", "Miro", "Notion", "Cursor"] },
-  { group: "Approach", items: ["Speculative design", "Systems thinking", "Behavioral design", "Participatory methods"] },
+  { group: "i", label: "Depth", color: "#6B9FD4", items: ["Future scenario building", "UI regulations (WCAG)", "Drawing", "Qual + quant user research", "Design systems", "Information architecture", "Figma", "Digital prototyping", "Storytelling"] },
+  { group: "t", label: "Collaborative", color: "#C8873A", items: ["Co-creation", "Teaching design", "Interdisciplinary collaboration", "Project management", "Workshop design", "Design thinking"] },
+  { group: "x", label: "Cross-disciplinary", color: "#7AB87A", items: ["Future scenario building", "System oriented design", "Product service system design", "Pitchdecking", "Storytelling"] },
+  { group: "tools", label: "Programs", color: "var(--muted)", items: ["Figma", "Miro", "Notion", "Cursor", "Claude Code", "Lovable"] },
 ];
 
 // ────────────────────────────────────────────────────────────────────────────

@@ -208,7 +208,7 @@ function ProjectDetailLocal() {
               {
                 num: "3", title: "Deliver",
                 body: "We built a clean dashboard focused on the essential marketer workflow, integrating AI only where it adds real value in the repetitive and automatable parts. Brief input and brand guardrails stay human. Generation, formatting, and variant production is where AI takes over, with the marketing team keeping full visibility and approval rights throughout. The MVP ran on an n8n backend with AI image generation through our inputted brand guardrails. The full end to end flow ran live at the final: brief input, variant generation with visible AI reasoning, human review and approval, and asset storage in the memory library. The AI reasoning cards were the strongest feature in the room, making the distinction between a tool that replaces judgment and one that augments it clearly visible to every judge.",
-                items: ["Local%20photos/Deliver1.mov", "Local%20photos/Deliver2.mov", "Local%20photos/Deliver3.mov"]
+                items: ["Local%20photos/Deliver1.mov", "Local%20photos/Deliver%202.mov", "Local%20photos/Deliver3.mov"]
               }
             ].map((step) => (
               <div key={step.num} style={{
